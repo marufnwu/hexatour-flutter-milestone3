@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>353551246657-jrhfc3er4cvdnrjfvjjoulmdepf3v0u1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.353551246657-jrhfc3er4cvdnrjfvjjoulmdepf3v0u1</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>353551246657-am650g8mavm1ep40j6aa5ldi8quurro1.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBTbHtobON_B-tbOWjRaWjwkB_yPp2t5_w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>353551246657</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.hexatour</string>
+	<key>PROJECT_ID</key>
+	<string>hexatour-e1459</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hexatour-e1459.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:353551246657:ios:7827f69076693ace8dedc0</string>
+</dict>
+</plist>

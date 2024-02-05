@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "353551246657",
+    "project_id": "hexatour-e1459",
+    "storage_bucket": "hexatour-e1459.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353551246657:android:dc9c035b9a5ffcf58dedc0",
+        "android_client_info": {
+          "package_name": "com.example.hexatour"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353551246657-am650g8mavm1ep40j6aa5ldi8quurro1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hexatour",
+            "certificate_hash": "c770d4c44e31b71e89bb3e396fc4e552f744b33d"
+          }
+        },
+        {
+          "client_id": "353551246657-at57altoum01lhqfo5plc3ajjtvivgr6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hexatour",
+            "certificate_hash": "fda97d945a4a616bddd24a0dfc65803de6900cc2"
+          }
+        },
+        {
+          "client_id": "353551246657-hdffdi4a0d2ckmk1knrc7bqssv0aod5d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFXMpO93EBv78V7P-UMMDeamJr9RGoRjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353551246657-hdffdi4a0d2ckmk1knrc7bqssv0aod5d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

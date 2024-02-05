@@ -1,0 +1,111 @@
+name: hexatour
+description: A new Flutter project.
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.4 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+  #state_mngt_arch
+  get: ^4.6.5
+  dio: ^5.0.3
+  dartz: ^0.10.1
+  equatable: ^2.0.5
+  flutter_dotenv: ^5.0.2
+
+  #cache_local
+  shared_preferences: ^2.0.17
+  http: ^0.13.5
+
+  #ui
+  flutter_svg: ^1.1.6
+  sizer: ^2.0.15
+  flutter_flushbar: ^0.0.2
+  flutter_otp_text_field: ^1.1.1
+  carousel_slider: ^4.2.1
+  flutter_typeahead: ^4.3.1
+  country_picker: ^2.0.19
+  fluttertoast: ^8.0.9
+  custom_line_indicator_bottom_navbar: ^0.0.8
+  font_awesome_flutter: ^10.4.0
+  flutter_launcher_icons: ^0.12.0
+  dotted_border: ^2.0.0+3
+  draggable_fab: ^0.1.4
+  url_launcher: ^6.1.10
+  pull_to_refresh: ^2.0.0
+
+  #firebase
+
+  firebase_dynamic_links: ^5.1.0
+  firebase_core: ^2.6.1
+  firebase_auth: ^4.2.8
+  firebase_analytics: ^10.1.4
+
+  google_sign_in: ^6.0.2
+  flutter_login_facebook:
+    ^1.7.0
+
+    #routes
+  go_router: ^6.2.0
+
+  #payment
+  razorpay_flutter: ^1.3.4
+  country_list_pick: ^1.0.1+6
+  country_calling_code_picker: ^2.0.1
+
+  #google geo location
+  geocoder: ^0.2.1
+  geolocator: ^9.0.2
+  easy_search_bar: ^2.5.0
+  csc_picker: ^0.2.7
+  firebase_messaging: ^14.5.0
+  flutter_local_notifications: ^14.0.0+1
+  intl: ^0.18.1
+  connectivity_plus: ^3.0.6
+  googleapis: ^10.1.0
+  language_picker: ^0.4.3
+ 
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter_launcher_icons: "^0.9.2"
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/5.png"
+
+  flutter_lints: ^2.0.0
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
+    - assets/images/
+    - assets/images/donation/
+    
+
+    - assets/icons/
+    - .env.production
+    - .env.development
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+        - asset: assets/fonts/Poppins-Light.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
