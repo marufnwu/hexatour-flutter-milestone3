@@ -11,7 +11,7 @@ import '../../../widgets/buttons/custom_button.dart';
 
 Widget exclusivepackage(
     {required String name,
-    required TourImage imagepath,
+     TourImage? imagepath,
     context,
     required Function() onTap}) {
   TextTheme theme = Theme.of(context).textTheme;
@@ -39,7 +39,7 @@ Widget exclusivepackage(
       ClipRRect(
         borderRadius: BorderRadius.circular(10),
         child: Image.network(
-          'https://nodejs.hackerkernel.com/hexatour/public${imagepath.imagepath}',
+          'https://nodejs.hackerkernel.com/hexatour/public${imagepath?.imagepath}',
           fit: BoxFit.fill,
           height: 20.h,
           width: 100.w,

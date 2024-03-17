@@ -22,6 +22,13 @@ class ServiceController extends GetxController {
   late HomeServices homeService = HomeServices(_dio);
 
   Future<bool> getService() async {
+    var s = ServicePackage(
+        description: "Service details",
+        id: 1,
+        serviceName: "Name of service",
+        images: []);
+    service.add(s);
+    return true;
     final response = await homeService.Services();
     response.fold((failure) {
       return false;
@@ -85,7 +92,6 @@ class ServiceController extends GetxController {
   }
 
   Future<bool> serviceBookings({required String value}) async {
-
     final response = await homeService.getServiceBookings(value: value);
 
     response.fold((failure) {

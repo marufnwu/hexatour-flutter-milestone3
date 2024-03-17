@@ -62,7 +62,6 @@ dependencies:
   country_calling_code_picker: ^2.0.1
 
   #google geo location
-  geocoder: ^0.2.1
   geolocator: ^9.0.2
   easy_search_bar: ^2.5.0
   csc_picker: ^0.2.7

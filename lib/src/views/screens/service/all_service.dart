@@ -38,7 +38,7 @@ class _AllServicesState extends State<AllServices> {
 
   @override
   void initState() {
-    // TODO: implement initState
+    serviceController.getService();
     super.initState();
     isLoggedin();
   }

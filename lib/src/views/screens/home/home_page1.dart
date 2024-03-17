@@ -23,6 +23,7 @@ import 'package:hexatour/src/views/screens/service/all_service.dart';
 import 'package:hexatour/src/views/screens/service/service_page.dart';
 import 'package:hexatour/src/views/screens/tours/all_tours.dart';
 import 'package:hexatour/src/views/screens/tours/recent_tour.dart';
+import 'package:hexatour/src/views/screens/tours/widgets/tour_widgets.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sizer/sizer.dart';
 
@@ -360,6 +361,7 @@ class _HomePage1State extends State<HomePage1> {
                           }),
                     ),
                   ),
+                  exclusivepackage(name: "name",  onTap: (){}, context: context),
                   SizedBox(
                     height: 1.h,
                   ),

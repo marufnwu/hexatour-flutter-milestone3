@@ -8,7 +8,7 @@ import 'package:draggable_fab/draggable_fab.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 // ignore: import_of_legacy_library_into_null_safe
-import 'package:geocoder/geocoder.dart';
+// import 'package:geocoder/geocoder.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
 
@@ -518,66 +518,66 @@ class _CabHomePageState extends State<CabHomePage> {
                                   color: ColorConst.redColor,
                                   context: context);
                             }
-                            var pickUpCoordinates = await Geocoder.local
-                                .findAddressesFromQuery(pickup.text);
-                            var dropCoordinates = await Geocoder.local
-                                .findAddressesFromQuery(drop.text);
+                            // var pickUpCoordinates = await Geocoder.local
+                            //     .findAddressesFromQuery(pickup.text);
+                            // var dropCoordinates = await Geocoder.local
+                            //     .findAddressesFromQuery(drop.text);
 
-                            if (_selectedVal == "Within") {
-                              if (dropCoordinates.first.locality !=
-                                  pickUpCoordinates.first.locality) {
-                                return Helpers.showSnackbar(
-                                    text:
-                                        "Both destination are of different city please choose outstation",
-                                    color: ColorConst.redColor,
-                                    context: context);
-                              }
-                            } else {
-                              List packageSplit = package.split("-");
-
-                              // if (pickUpCoordinates.first.locality
-                              //             .toLowerCase() !=
-                              //         packageSplit[0].toLowerCase() ||
-                              //     dropCoordinates.first.locality
-                              //             .toLowerCase() !=
-                              //         packageSplit[1].toLowerCase()) {
-                              //   return Helpers.showSnackbar(
-                              //       text:
-                              //           "Destination is invalid",
-                              //       color: ColorConst.redColor,
-                              //       context: context);
-                              // }
-
-                              Map data = {
-                                "Package": package,
-                                "Date": cabController.date.value,
-                                "Time": cabController.time.value
-                              };
-
-                              // for (var k in data.keys) {
-                              //   if (Helpers.isNull(data[k]) ||
-                              //       data[k] == 'Select Package') {
-                              //     return Helpers.showSnackbar(
-                              //         text: "${k} is required",
-                              //         color: ColorConst.redColor,
-                              //         context: context);
-                              //   }
-                              // }
-                            }
-
-                            totalKm = Helpers.toDouble(
-                                await (Geolocator.distanceBetween(
-                                          dropCoordinates
-                                              .first.coordinates.latitude,
-                                          dropCoordinates
-                                              .first.coordinates.longitude,
-                                          pickUpCoordinates
-                                              .first.coordinates.latitude,
-                                          pickUpCoordinates
-                                              .first.coordinates.longitude,
-                                        ) /
-                                        1000)
-                                    .toStringAsFixed(1));
+                            // if (_selectedVal == "Within") {
+                            //   if (dropCoordinates.first.locality !=
+                            //       pickUpCoordinates.first.locality) {
+                            //     return Helpers.showSnackbar(
+                            //         text:
+                            //             "Both destination are of different city please choose outstation",
+                            //         color: ColorConst.redColor,
+                            //         context: context);
+                            //   }
+                            // } else {
+                            //   List packageSplit = package.split("-");
+                            //
+                            //   // if (pickUpCoordinates.first.locality
+                            //   //             .toLowerCase() !=
+                            //   //         packageSplit[0].toLowerCase() ||
+                            //   //     dropCoordinates.first.locality
+                            //   //             .toLowerCase() !=
+                            //   //         packageSplit[1].toLowerCase()) {
+                            //   //   return Helpers.showSnackbar(
+                            //   //       text:
+                            //   //           "Destination is invalid",
+                            //   //       color: ColorConst.redColor,
+                            //   //       context: context);
+                            //   // }
+                            //
+                            //   Map data = {
+                            //     "Package": package,
+                            //     "Date": cabController.date.value,
+                            //     "Time": cabController.time.value
+                            //   };
+                            //
+                            //   // for (var k in data.keys) {
+                            //   //   if (Helpers.isNull(data[k]) ||
+                            //   //       data[k] == 'Select Package') {
+                            //   //     return Helpers.showSnackbar(
+                            //   //         text: "${k} is required",
+                            //   //         color: ColorConst.redColor,
+                            //   //         context: context);
+                            //   //   }
+                            //   // }
+                            // }
+                            //
+                            // totalKm = Helpers.toDouble(
+                            //     await (Geolocator.distanceBetween(
+                            //               dropCoordinates
+                            //                   .first.coordinates.latitude,
+                            //               dropCoordinates
+                            //                   .first.coordinates.longitude,
+                            //               pickUpCoordinates
+                            //                   .first.coordinates.latitude,
+                            //               pickUpCoordinates
+                            //                   .first.coordinates.longitude,
+                            //             ) /
+                            //             1000)
+                            //         .toStringAsFixed(1));
 
                             if (totalKm == 0) {
                               return Helpers.showSnackbar(

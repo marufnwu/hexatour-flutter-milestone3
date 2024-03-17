@@ -16,14 +16,14 @@ import 'core/utils/environment.dart';
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-    
+
   );
 
-  getToken();
+  // getToken();
 
   
-  setupFirebaseMessaging();
-  firebaseCloudMessagingListeners();
+  // setupFirebaseMessaging();
+  // firebaseCloudMessagingListeners();
 
   await dotenv.load(fileName: Environment.fileName);
 
